@@ -1,5 +1,6 @@
 [![Build Status](https://travis-ci.org/philpalmieri/simple-node-scraper.svg?branch=master)](https://travis-ci.org/philpalmieri/simple-node-scraper)
 
+
 # Link Checker
 Simple proof of concept to scan a url, and extract it's links to a standard output
 
