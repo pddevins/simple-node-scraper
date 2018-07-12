@@ -1,12 +1,12 @@
-[![Build Status](https://travis-ci.org/philpalmieri/simple-node-scraper.svg?branch=master)](https://travis-ci.org/philpalmieri/simple-node-scraper)
-
 # Link Checker
 Simple proof of concept to scan a url, and extract it's links to a standard output
 
 ## Notes & Usage
 - Requires node 10+ for URL usage
+- Derek steered me away from a 'production' solution using docker, queue server, and far more validation/threading/memory checks etc
 - This will fail if you hit a production site like reddit.com, their firewalls will prevent too many requests, to test, use a smaller site
 - this should not be an on-demand service, but instead a scheduled service that continually updates a sitemap with better controlls
+- converted test suit to Jest for better async handling and nock support
 
 ### Module Usage
 ```javascript 
@@ -32,7 +32,7 @@ async () => {
 ```javascript
 nvm use 10
 yarn install
-node cli.js -u https://partnercomm.net/trending/
+node cli.js -u https://oddball.io
 ```
 
 ## TODOS
@@ -43,4 +43,4 @@ node cli.js -u https://partnercomm.net/trending/
 - [ ] come up with error handling for modified date
 
 ## Examples
-![](images/demo.gif)
+![](images/oddball.png)

@@ -1,0 +1,270 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+xmlns:fb="http://ogp.me/ns/fb#">
+<head>
+<title>Oddball.io</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="/css/logo_style.css">
+
+<meta property="og:image" content="http://oddball.io/assets/facebook_share.png" />
+<meta property="og:title" content="Oddball - a strangely human digital agency" />
+<meta property="og:url" content="https://oddball.io" />
+
+<link href="/css/styles.css" rel="stylesheet">
+<script src="/js/scrollPolyfill.js" type="text/javascript"></script>
+<script src="/js/site.js" type="text/javascript"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, max-scale=1.0">
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+      document.getElementById('scrollArrow').addEventListener("click", function () {
+          document.getElementById("work").scrollIntoView({
+              behavior: 'smooth'
+          });
+      })
+  })
+</script>
+</head>
+
+<body>
+<div class="navbar">
+  <div class="navbar-left">
+      <a href="index.html"><div class="oddball-logo"></div></a>
+  </div>
+  <div class="navbar-right">
+      <a class="mobile-hamburger" href="javascript:void(0);" onclick="openMobileDropdown()">&#9776;</a>
+      <div id="nav_items" class="nav-items">
+          <a class="nav-link" href="about.html">About</a>
+          <a class="nav-link" href="work.html">Work</a>
+          <a class="nav-link" target="_blank" href="https://blog.oddball.io">Blog</a>
+          <a class="nav-link" href="/jobs">Jobs</a>
+          <a class="nav-link" href="/contact">Contact</a>
+          <div class="nav-button" id="newsletter">Newsletter</div>
+      </div>
+  </div>
+</div>
+<section class="hero">
+  <div class="logo">
+      <div class="container">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+              <g class="headline-group hidden">
+                  <text class="text-headline" id="textAreaTwo" x="200" y="485">
+                      Our Digital Vision
+                  </text>
+
+                  <text class="text-headline" id="textAreaThree" x="200" y="485">
+                      Navigates The Way
+                  </text>
+
+                  <text class="text-headline" id="textAreaFour" x="200" y="485">
+                      Nerding Out
+                  </text>
+
+                  <text class="text-headline" id="textAreaFive" x="200" y="485">
+                      And Narrowing In
+                  </text>
+
+                  <text class="text-headline" id="textAreaSix" x="200" y="485">
+                      To Find The Answers
+                  </text>
+              </g>
+
+              <g class="hidden" id="logo-group">
+                  <ellipse class="stroked convert" id="circleOneA" cx="94.8" cy="462.7" rx="82.4" ry="85"/>
+                  <ellipse class="stroked convert" id="circleOneB" cx="94.8" cy="462.7" rx="72.4" ry="75"/>
+                  <!-- EXTRA CIRCLES FOR ANIMATING -->
+                  <path class="outlined" id="logoLineA" d="M89.8,387.2c-22.7,16.7-37.8,43.2-38.8,73.5c-1,30.7,12.6,58.5,34.5,76.7"/>
+                  <path class="outlined" id="logoLineB" d="M108.1,536.4c-20.6-18.2-33.2-45.1-32.2-74.7c1-29.4,15.3-55.3,36.9-72"/>
+              </g>
+
+
+              <text class="hidden subhead" id="subHead" x="135" y="605" width="1000" height="100" textLength="724">
+                      A strangely human digital agency
+              </text>
+
+              <g class="hidden" id="eyeball-group">
+                  <ellipse class="stroked convert" id="circleTwoA" cx="94.8" cy="462.7" rx="72.4" ry="75" />
+                  <ellipse class="stroked convert" id="circleTwoB" cx="94.8" cy="462.7" rx="72.4" ry="75" />
+                  <ellipse class="stroked convert" id="circleTwoC" cx="94.8" cy="462.7" rx="72.4" ry="75" />
+                  <ellipse class="filled convert" id="iris" cx="95.2" cy="462.7" rx="17.2" ry="17.8"/>
+                  <ellipse class="stroked convert" id="main-lid" cx="94.8" cy="462.7" rx="72.4" ry="75"/>
+                  <path id="lid-one" d="M167.7,463.2c0,15.5-32.4-23.9-72.4-23.9s-72.4,40.3-72.4,23.9c0-41.4,32.4-75,72.4-75 S167.7,421.8,167.7,463.2z"/>
+                  <path id="lid-two" d="M167.7,463.2c0,15.5-32.4-4.8-72.4-4.8s-72.4,21.3-72.4,4.8c0-41.4,32.4-75,72.4-75 S167.7,421.8,167.7,463.2z"/>
+                  <path class="stroked" id="lid-three" d="M168,463.2c0,0-32.4,0-72.4,0s-72.4,0-72.4,0c0-41.4,32.4-75,72.4-75S168,421.8,168,463.2z"/>
+                  <path id="lid-four" d="M167.7,463.2c0,15.5-32.4,30.5-72.4,30.5s-72.4-14-72.4-30.5c0-41.4,32.4-75,72.4-75 S167.7,421.8,167.7,463.2z"/>
+              </g>
+
+
+              <g class="hidden" id="compass-group">
+                  <ellipse class="stroked convert" id="circleThreeC" cx="94.8" cy="462.7" rx="72.4" ry="75" />
+                  <ellipse class="stroked convert" id="circleThreeD" cx="94.8" cy="462.7" rx="72.4" ry="75" />
+                  <path class="stroked" id="compass-ticks" d="M153.8,464H169 M67.3,532.8l5.7-14.1 M42.6,516.3l10.8-10.8 M40.9,487.1l-14,6 M94.9,538.2V523 M163.7,491.6 l-14.1-5.7 M147.3,516.5l-10.8-10.8 M124.1,532.2l-6-14 M26.4,436.7l14.1,5.7 M94.9,390.3v15.2 M122.3,395.5l-5.7,14.1 M36.3,464 H21.1 M147.1,411.8l-10.8,10.8 M65.8,396.3l6,14 M162.9,434.9l-14,6 M42.7,411.9l10.8,10.8"/>
+                  <ellipse class="stroked convert" id="circleThreeA" cx="94.8" cy="462.7" rx="72.4" ry="75" />
+                  <ellipse class="stroked convert" id="circleThreeB" cx="94.8" cy="462.7" rx="72.4" ry="75" />
+                  <path class="stroked" id="compass-dial" <path class="stroked" d="M95.7,500l-18-36.3l18-36.3l18,36.3L95.7,500z"/>
+              </g>
+
+
+              <g class="hidden" id="circuit-group">
+                  <ellipse class="outlined convert" id="circleFourA" cx="95.3" cy="463.2" rx="72.4" ry="75" />
+                  <ellipse class="outlined convert" id="circleFourB" cx="95.3" cy="463.2" rx="72.4" ry="75" />
+                  <g>
+                      <circle class="outlined circuit-ends final-circle" cx="95.6" cy="464.3" r="38.2"/>
+                  </g>
+                  <g>
+                      <circle class="outlined circuit-ends final-circle" cx="47.8" cy="332.4" r="9.7"/>
+                      <polyline class="outlined circuit-line final-line" points="56.5,339.2 95.6,364 95.6,389.4   "/>
+                  </g>
+                  <g>
+                      <circle class="outlined circuit-ends final-circle" cx="143.2" cy="596.2" r="9.7"/>
+                      <polyline class="outlined circuit-line final-line" points="134.5,589.4 95.4,564.6 95.4,539.3    "/>
+                  </g>
+                  <g>
+                      <circle class="outlined circuit-ends final-circle" cx="148.8" cy="334" r="9.7"/>
+                      <polyline class="outlined circuit-line final-line" points="139.1,334 109.1,334 109.1,389.4  "/>
+                  </g>
+                  <g>
+                      <circle class="outlined circuit-ends" cx="24.9" cy="380.7" r="9.7"/>
+                      <polyline class="outlined circuit-line" points="22.9,388.2 7.5,446.1 22.5,446.1     "/>
+                  </g>
+                  <g>
+                      <circle class="outlined circuit-ends" cx="185" cy="521" r="9.7"/>
+                      <polyline class="outlined circuit-line" points="185, 513.3, 185, 470.3, 170.5, 470.3"/>
+                  </g>
+                  <g>
+                      <circle class="outlined circuit-ends final-circle" cx="40.6" cy="583.9" r="9.7"/>
+                      <line class="outlined circuit-line final-line" x1="45.6" y1="576.2" x2="65.5" y2="533.2"/>
+                  </g>
+                  <g>
+                      <circle class="outlined circuit-ends final-circle" cx="92.8" cy="459.4" r="9.7"/>
+                      <polyline class="outlined circuit-line final-line" id="inside-line" points="101.5,466.2 112.6,474 112.6,499.4   "/>
+                  </g>
+              </g>
+
+              <g class="hidden" id="target-group">
+                  <ellipse class="outlined convert" id="circleFiveA" cx="95.3" cy="463.2" rx="72.4" ry="75" />
+                  <ellipse class="outlined convert" id="circleFiveB" cx="95.3" cy="463.2" rx="72.4" ry="75" />
+                  <ellipse class="outlined convert" id="circleFiveC" cx="95.3" cy="463.2" rx="72.4" ry="75" />
+                  <ellipse class="outlined convert" id="circleFiveD" cx="95.3" cy="463.2" rx="72.4" ry="75" />
+                  <ellipse class="outlined convert" id="circleFiveE" cx="95.3" cy="463.2" rx="72.4" ry="75" />
+                  <ellipse class="outlined" id="ring-two" cx="95.3" cy="463.2" rx="52.4" ry="55" />
+                  <ellipse class="outlined" id="ring-three" cx="95.3" cy="463.2" rx="32.4" ry="35" />
+                  <ellipse class="outlined" id="ring-four" cx="95.3" cy="463.2" rx="14.4" ry="17" />
+                  <ellipse class="outlined" id="ring-five" cx="95.3" cy="463.2" rx="3.5" ry="3.7" />
+              </g>
+
+              <g class="hidden" id="venn-group">
+                  <ellipse class="outlined convert" id="circleSixA" cx="95.3" cy="463.2" rx="72.4" ry="75" />
+                  <ellipse class="outlined convert" id="circleSixB" cx="95.3" cy="463.2" rx="72.4" ry="75" />
+                  <ellipse class="outlined convert" id="circleSixC" cx="95.3" cy="463.2" rx="72.4" ry="75" />
+                  <ellipse class="outlined convert" id="circleSixD" cx="95.3" cy="463.2" rx="72.4" ry="75" />
+                  <ellipse class="outlined convert" id="vennOne" cx="94.3" cy="440.8" rx="46.9" ry="48.6" />
+                  <ellipse class="outlined convert" id="vennTwo" cx="75.2" cy="474.1" rx="46.9" ry="48.6" />
+                  <ellipse class="outlined convert" id="vennThree" cx="115.4" cy="474.1" rx="46.9" ry="48.6" />
+              </g>
+
+              <g class="letters-group hidden">
+                  <g class="letter">
+                      <ellipse class="stroked" id="letterOne" cx="200" cy="485.1" rx="48.5" ry="50.3"/>
+                  </g>
+                  <g class="letter">
+                      <ellipse class="stroked" id="letterTwoA" cx="189.9" cy="485.1" rx="48.5" ry="50.3"/>
+                      <line id="letterTwoB" x1="238.4" y1="377.6" x2="238.4" y2="537.8"/>
+                  </g>
+                  <g class="letter">
+                      <ellipse id="letterThreeA" cx="156.9" cy="485.1" rx="48.5" ry="50.3"/>
+                      <line id="letterThreeB" x1="205.4" y1="377.6" x2="205.4" y2="537.8"/>
+                  </g>
+                  <g class="letter">
+                      <ellipse class="stroked" id="letterFourA" cx="131.9" cy="485.1" rx="48.5" ry="50.3"/>
+                      <line class="stroked" id="letterFourB" x1="83.4" y1="377.6" x2="83.4" y2="537.8"/>
+                  </g>
+                  <g class="letter">
+                      <ellipse id="letterFiveA" cx="91.9" cy="485.1" rx="48.5" ry="50.3"/>
+                      <line id="letterFiveB" x1="140.4" y1="432.3" x2="140.4" y2="537.8"/>
+                  </g>
+                  <g class="letter">
+                      <line id="letterSixA" x1="18.8" y1="377.6" x2="18.8" y2="537.8"/>
+                      <line id="letterSixB" x1="62.7" y1="377.6" x2="62.7" y2="537.8"/>
+                  </g>
+              </g>
+
+
+          </svg>
+      </div><!-- CONTAINER -->
+      <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+      <script src='/js/DrawSVGPlugin.min.js'></script>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js'></script>
+      <script src="/js/MorphSVGPlugin.min.js"
+      <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/findShapeIndex.js'></script>
+
+      <script src="/js/logo_index.js"></script>
+  </div>
+
+  <div id="scrollArrow"></div>
+</section>
+
+<section class="work" id="work">
+  <div class="h1-wrapper">
+      <h1>Project Spotlight</h1>
+  </div>
+
+  <div class="project">
+      <div class="project-text">
+          <h2 class="dark">My Financial Aid Calculator</h2>
+          <h3 class="light">Kennedy and Company</h3>
+
+          <div class="project-description">
+              Universities across the US use My Financial Aid Calculator to increase their admissions through applicant tracking and by improving access to relevant financial aid data.
+          </div>
+          <a class="cta" href="/work/my-financial-aid-calculator">
+              See The Project
+          </a>
+      </div>
+      <div class="project-img">
+          <div class="img-background">
+              <img src="/assets/first-aid/1.png">
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="services">
+  <div class="content-wrapper">
+      <div class="service" type="dev">
+          <h2 class="dark">Development</h2>
+          <div class="service-text">Is it code? Was it made in the last 15 years? Then we do it.</div>
+      </div>
+      <div class="service" type="design">
+          <h2 class="dark">Design</h2>
+          <div class="service-text">A crisp, beautiful interface brings us great joy.</div>
+      </div>
+      <div class="service" type="mgmt">
+          <h2 class="dark">Management</h2>
+          <div class="service-text">We’ve got under control under control.</div>
+      </div>
+      <div class="service" type="biz">
+          <h2 class="dark">Business</h2>
+          <div class="service-text">Your business is our business.</div>
+      </div>
+  </div>
+
+  <div class="content-wrapper">
+      <a href="/about" class="cta">
+          More about Us
+      </a>
+  </div>
+</section>
+
+<div class="footer">
+  <div class="oddball-logo-footer"></div>
+  <div class="contact-info">
+      5792 W Jefferson Blvd <br/>
+      Los Angeles, CA 90016 <br/><br/>
+      202-455-8505 <br/><br/>
+      hello@oddball.io
+  </div>
+</div>
+</body>
+
+</html>
