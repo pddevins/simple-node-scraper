@@ -17,22 +17,22 @@ describe('visit', () => {
     });
 
     it('should fetch a page if url is good', async (done) => {
-        nock('https://www.oddball.io')
+        nock('https://www.philpalmieri.me')
         .get('/')
         .reply(200, 'fetched', {'last-modified': 'Tue, 10 Jul 2018 02:16:12 GMT'});
                 
-        const goodVisit = await visit("https://www.oddball.io/");
+        const goodVisit = await visit("https://www.philpalmieri.me/");
         expect(goodVisit[0].lastmod).toBe('Tue, 10 Jul 2018 02:16:12 GMT');
         done();
             
     });
 
     it('should include child links', async (done) => {
-        nock('https://www.oddball.io', { allowUnmocked: false })
+        nock('https://www.philpalmieri.me', { allowUnmocked: false })
         .get('/')
         .reply(200, oddball, {'last-modified': 'Tue, 10 Jul 2018 02:16:12 GMT'});
     
-        nock("https://www.oddball.io", { allowUnmocked: false })
+        nock("https://www.philpalmieri.me", { allowUnmocked: false })
         .persist()
         .filteringPath((path) => {
             if(path != '/') {
@@ -43,7 +43,7 @@ describe('visit', () => {
         .reply(200, oddballchild, {'last-modified': 'Tue, 10 Jul 2018 02:16:12 GMT'});
         
         try {
-            const links = await visit("https://www.oddball.io/");
+            const links = await visit("https://www.philpalmieri.me/");
             expect(links.length).toBe(11);
         } catch(e) {
             console.log("error", e);

@@ -9,7 +9,7 @@ describe('URL Helper', () => {
     });
 
     it('should properly check urls', () => {
-        const baseUrl = 'https://www.oddball.io';
+        const baseUrl = 'https://www.philpalmieri.me';
         const seedLinks = [
             { url: '/foobar.js', expected: false },
             { url: '/foobar', expected: `${baseUrl}/foobar` },
