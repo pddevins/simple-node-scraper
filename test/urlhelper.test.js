@@ -1,5 +1,5 @@
 const fs = require('fs-then-native');
-const oddball = fs.readFileSync('./test/data/oddball.io.html', 'utf8');
+const oddball = fs.readFileSync('./test/data/index.html', 'utf8');
 const urlHelper = require('../lib/urlhelper');
 
 describe('URL Helper', () => {

@@ -1,7 +1,7 @@
 {
-  "name": "analytics-server",
+  "name": "node-link-scraper",
   "version": "1.0.0",
-  "description": "```js  /** Description: We are going to build a sitemap. Because our site is dynamically generated, the easiest way for us to do it is to write a crawler that will crawl the site.",
+  "description": "POC Site Crawler to experiment with workers and threading",
   "main": "index.js",
   "scripts": {
     "test": "jest --coverage --detectOpenHandles"

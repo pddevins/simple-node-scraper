@@ -2,7 +2,7 @@ const visit = require('../visit')
 const helpers = require('../helpers');
 const nock = require('nock');
 const fs = require('fs-then-native');
-const oddball = fs.readFileSync('./test/data/oddball.io.html', 'utf8');
+const oddball = fs.readFileSync('./test/data/index.html', 'utf8');
 const oddballchild = fs.readFileSync('./test/data/childpage.html', 'utf8');
 
 describe('visit', () => {
