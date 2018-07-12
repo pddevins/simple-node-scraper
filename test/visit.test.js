@@ -1,8 +1,8 @@
 const visit = require('../visit')
 const nock = require('nock');
 const fs = require('fs-then-native');
-const oddball = fs.readFileSync('./test/data/index.html', 'utf8');
-const oddballchild = fs.readFileSync('./test/data/childpage.html', 'utf8');
+const faketml = fs.readFileSync('./test/data/index.html', 'utf8');
+const faketmlchild = fs.readFileSync('./test/data/childpage.html', 'utf8');
 
 describe('visit', () => {
 
@@ -30,7 +30,7 @@ describe('visit', () => {
     it('should include child links', async (done) => {
         nock('https://www.philpalmieri.me', { allowUnmocked: false })
         .get('/')
-        .reply(200, oddball, {'last-modified': 'Tue, 10 Jul 2018 02:16:12 GMT'});
+        .reply(200, faketml, {'last-modified': 'Tue, 10 Jul 2018 02:16:12 GMT'});
     
         nock("https://www.philpalmieri.me", { allowUnmocked: false })
         .persist()
@@ -40,7 +40,7 @@ describe('visit', () => {
             }
         })
         .get("/fake")
-        .reply(200, oddballchild, {'last-modified': 'Tue, 10 Jul 2018 02:16:12 GMT'});
+        .reply(200, faketmlchild, {'last-modified': 'Tue, 10 Jul 2018 02:16:12 GMT'});
         
         try {
             const links = await visit("https://www.philpalmieri.me/");
